@@ -1,0 +1,21 @@
+# 1. Setup
+python -m venv venv
+source venv/bin/activate        # Mac/Linux
+venv\Scripts\activate           # Windows
+
+pip install scikit-learn pandas numpy matplotlib seaborn colorama tabulate tqdm joblib
+
+# 2. Run full pipeline
+python main.py
+
+# 3. With more training data (better accuracy)
+python main.py --samples 5000
+
+# 4. Interactive mode (test your own emails)
+python main.py --interactive
+
+# 5. Save the trained model
+python main.py --save-model
+
+# 6. No plots (faster)
+python main.py --no-plot
